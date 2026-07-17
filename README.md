@@ -32,7 +32,7 @@ A **ZuckPay** é um gateway brasileiro de pagamentos digitais, fundado em 2025, 
 
 | Produto | Descrição |
 |---|---|
-| **Pagamentos PIX e cartão** | Cobranças com confirmação em tempo real e multiadquirência para maximizar aprovação |
+| **Pagamentos PIX e cartão** | Cobranças com confirmação em tempo real e multiadquirência para maximizar aprovação — cartão nacional (BRL) e internacional (Stripe) |
 | **Saques em D+0** | Saldo de vendas via PIX disponível para saque imediatamente após a confirmação do pagamento |
 | **Checkout** | Páginas de pagamento personalizáveis com order bump, upsell, cupons e pixels de rastreamento |
 | **ZuckMembers** | Área de membros integrada para cursos e conteúdo digital, sem custo adicional |
@@ -41,12 +41,19 @@ A **ZuckPay** é um gateway brasileiro de pagamentos digitais, fundado em 2025, 
 
 ## Para desenvolvedores
 
-- **API REST** — endpoints de PIX, cartão, PayPal, SPEI, transações e saldo: [documentação](https://www.zuckpay.com.br/conta/dev/)
+Gere suas credenciais no painel ZuckPay em **Desenvolvedores → Credenciais API** e escolha o caminho:
+
+- **API REST** — endpoints de PIX, cartão, PayPal, SPEI, transações e saldo, com webhook assinado (HMAC): [documentação](https://www.zuckpay.com.br/conta/dev/)
 - **MCP oficial** — conecte sua conta ZuckPay ao Claude Code, Claude Desktop, Cursor e outros clientes MCP: [ZuckPay/zuckpay-mcp](https://github.com/ZuckPay/zuckpay-mcp)
 
 ```bash
-claude mcp add zuckpay -e ZUCKPAY_CLIENT_ID=seu_client_id -e ZUCKPAY_CLIENT_SECRET=seu_client_secret -- npx -y zuckpay-mcp
+claude mcp add zuckpay \
+  -e ZUCKPAY_CLIENT_ID=seu_client_id \
+  -e ZUCKPAY_CLIENT_SECRET=seu_client_secret \
+  -- npx -y zuckpay-mcp
 ```
+
+Sem instalar nada: o mesmo servidor roda hospedado em `https://mcp.zuckpay.com.br/mcp` — basta apontar seu cliente MCP para a URL autenticando com as suas credenciais (detalhes no [README do MCP](https://github.com/ZuckPay/zuckpay-mcp#modo-http-hospedado-multi-tenant)).
 
 ## Canais oficiais
 
