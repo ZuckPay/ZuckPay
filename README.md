@@ -32,12 +32,20 @@ A **ZuckPay** é um gateway brasileiro de pagamentos digitais, fundado em 2025, 
 
 | Produto | Descrição |
 |---|---|
-| **Pagamentos PIX e cartão** | Cobranças com confirmação em tempo real e multiadquirência para maximizar aprovação — cartão nacional (BRL) e internacional (Stripe) |
-| **Saques em D+0** | Saldo de vendas via PIX disponível para saque imediatamente após a confirmação do pagamento |
-| **Checkout** | Páginas de pagamento personalizáveis com order bump, upsell, cupons e pixels de rastreamento |
-| **ZuckMembers** | Área de membros integrada para cursos e conteúdo digital, sem custo adicional |
-| **Links de pagamento** | Venda por WhatsApp, Instagram, e-mail ou qualquer canal |
-| **ZuckBot** | Automação de vendas e entrega no Telegram com construtor visual de funis |
+| 💳 **Pagamentos PIX e cartão** | Cobranças com confirmação em tempo real e multiadquirência para maximizar aprovação — cartão nacional (BRL) e internacional (Stripe) |
+| ⚡ **Saques em D+0** | Saldo de vendas via PIX disponível para saque imediatamente após a confirmação do pagamento |
+| 🛒 **Checkout** | Páginas de pagamento personalizáveis com order bump, upsell, cupons e pixels de rastreamento |
+| 🎓 **ZuckMembers** | Área de membros integrada para cursos e conteúdo digital, sem custo adicional |
+| 🔗 **Links de pagamento** | Venda por WhatsApp, Instagram, e-mail ou qualquer canal |
+| 🤖 **ZuckBot** | Automação de vendas e entrega no Telegram com construtor visual de funis |
+
+## Comece em 3 passos
+
+1. **Crie sua conta** em [www.zuckpay.com.br](https://www.zuckpay.com.br) — o cadastro é gratuito.
+2. **Configure seu produto** — checkout completo, link de pagamento ou funil no Telegram, sem escrever código.
+3. **Receba na hora** — PIX confirmado em tempo real com saque em D+0; cartão nacional e internacional no mesmo painel.
+
+Quer integrar por código ou por IA? Veja a seção a seguir.
 
 ## Para desenvolvedores
 
